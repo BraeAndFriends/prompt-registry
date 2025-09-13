@@ -1,0 +1,9 @@
+{
+  "position": 4,
+  "label": "Buyer List Agent",
+  "link": {
+    "type": "generated-index",
+    "title": "Buyer List Agent",
+    "description": "Agent responsible for identifying and managing buyer lists"
+  }
+}

@@ -1,0 +1,154 @@
+/* Custom styles for the Prompt Registry */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Agent-specific color coding */
+.agent-pitch-drafter {
+  --ifm-color-primary: #e1f5fe;
+  --ifm-color-primary-dark: #b3e5fc;
+}
+
+.agent-company-research {
+  --ifm-color-primary: #f3e5f5;
+  --ifm-color-primary-dark: #e1bee7;
+}
+
+.agent-industry-research {
+  --ifm-color-primary: #e8f5e8;
+  --ifm-color-primary-dark: #c8e6c9;
+}
+
+.agent-buyer-list {
+  --ifm-color-primary: #fff3e0;
+  --ifm-color-primary-dark: #ffe0b2;
+}
+
+/* Custom prompt template styling */
+.prompt-template {
+  background: var(--ifm-color-emphasis-100);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.prompt-template h3 {
+  margin-top: 0;
+  color: var(--ifm-color-primary);
+}
+
+.prompt-section {
+  margin-bottom: 1.5rem;
+}
+
+.prompt-section h4 {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme="dark"] .prompt-section h4 {
+  border-bottom-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-100);
+}
+
+/* Mermaid diagram styling */
+.mermaid {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Code block improvements */
+pre code {
+  font-size: 0.9em;
+}
+
+/* Table improvements */
+table {
+  margin-bottom: 1rem;
+}
+
+table th {
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+
+[data-theme="dark"] table th {
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* Navigation improvements */
+.menu__link--active {
+  font-weight: 600;
+}
+
+/* Footer improvements */
+.footer {
+  background: var(--ifm-color-emphasis-100);
+}
+
+[data-theme="dark"] .footer {
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* Custom admonitions for prompt types */
+.admonition-system {
+  border-left-color: #2e8555;
+}
+
+.admonition-system .admonition-heading {
+  background: rgba(46, 133, 85, 0.1);
+}
+
+.admonition-generation {
+  border-left-color: #1877f2;
+}
+
+.admonition-generation .admonition-heading {
+  background: rgba(24, 119, 242, 0.1);
+}
+
+.admonition-analysis {
+  border-left-color: #ff6b35;
+}
+
+.admonition-analysis .admonition-heading {
+  background: rgba(255, 107, 53, 0.1);
+}
+
+.admonition-strategy {
+  border-left-color: #9c27b0;
+}
+
+.admonition-strategy .admonition-heading {
+  background: rgba(156, 39, 176, 0.1);
+}

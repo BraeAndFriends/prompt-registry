@@ -1,0 +1,9 @@
+{
+  "position": 1,
+  "label": "Pitch Drafter Agent",
+  "link": {
+    "type": "generated-index",
+    "title": "Pitch Drafter Agent",
+    "description": "Agent responsible for drafting compelling pitches based on context and inputs"
+  }
+}

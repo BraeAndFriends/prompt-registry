@@ -1,0 +1,9 @@
+{
+  "position": 3,
+  "label": "Industry Research Agent",
+  "link": {
+    "type": "generated-index",
+    "title": "Industry Research Agent",
+    "description": "Agent responsible for researching industry trends and analysis"
+  }
+}

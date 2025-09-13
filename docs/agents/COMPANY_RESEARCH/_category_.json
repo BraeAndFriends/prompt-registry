@@ -1,0 +1,9 @@
+{
+  "position": 2,
+  "label": "Company Research Agent",
+  "link": {
+    "type": "generated-index",
+    "title": "Company Research Agent",
+    "description": "Agent responsible for researching and analyzing company information"
+  }
+}
