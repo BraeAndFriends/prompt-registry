@@ -4,7 +4,7 @@ module.exports = {
   tagline: "Hierarchical Agent Prompt Documentation",
   favicon: "img/favicon.ico",
 
-  url: "https://brae-prompt-registry.github.io",
+  url: "https://braeandfriends.github.io",
   baseUrl: "/prompt-registry",
 
   // GitHub pages deployment config
