@@ -1,0 +1,56 @@
+.codeBlockWrapper {
+    /* This container is necessary for positioning the button */
+    position: relative;
+  }
+  
+  .toggleButton {
+    position: absolute;
+    z-index: 1;
+    
+    background-color: var(--ifm-color-emphasis-200);
+    color: var(--ifm-color-emphasis-700);
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    
+    /* --- MODIFICATIONS START HERE --- */
+  
+    /* 1. Set the default opacity to make it semi-transparent */
+    opacity: 0.5;
+  
+    /* 2. Ensure 'opacity' is included in the transition for a smooth effect.
+       The existing 'all' value already covers this, so no change is needed here,
+       but it's good to be aware of. */
+    transition: all 0.2s ease-in-out;
+    
+    /* --- MODIFICATIONS END HERE --- */
+  }
+  
+  /* We will combine :hover and :focus for better accessibility */
+  .toggleButton:hover,
+  .toggleButton:focus {
+    background-color: var(--ifm-color-emphasis-300);
+    
+    /* --- MODIFICATION --- */
+    /* 3. Set opacity back to 1 to make it fully visible on interaction. */
+    opacity: 1;
+  }
+  
+  /* Style for the <pre> tag in raw mode to match Docusaurus's default */
+  .rawTextPre {
+    margin-top: 16px;
+    padding: var(--ifm-pre-padding);
+    padding-top: 32px;
+    color: var(--ifm-font-color-base);
+    background-color: transparent;
+    font-family: var(--ifm-font-family-base);
+    font-size: var(--ifm-code-font-size);
+    line-height: var(--ifm-leading);
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .codeblockTop {
+    padding-top: 32px;
+  }
