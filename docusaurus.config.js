@@ -5,7 +5,7 @@ module.exports = {
   favicon: "img/favicon.ico",
 
   url: "https://brae-prompt-registry.github.io",
-  baseUrl: "/prompt-registry/docs/",
+  baseUrl: "/prompt-registry",
 
   // GitHub pages deployment config
   organizationName: "Brae",
@@ -29,6 +29,7 @@ module.exports = {
         docs: {
           sidebarPath: "./sidebars.js",
           sidebarCollapsed: false,
+          routeBasePath: 'docs',
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -41,7 +42,10 @@ module.exports = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Brae - Prompt Registry",
+        logo: {
+          alt: "Brae Logo",
+          src: "/img/brae-logo.svg",
+        },
 
         items: [
           {
@@ -60,7 +64,7 @@ module.exports = {
             items: [
               {
                 label: "Agent Overview",
-                to: "/docs/overview/agent-flows-overview",
+                to: "/overview/agent-flows-overview",
               },
             ],
           },
