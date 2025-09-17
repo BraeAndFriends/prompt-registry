@@ -76,4 +76,13 @@ module.exports = {
         darkTheme: require("prism-react-renderer").themes.vsDark,
       },
     }),
+    plugins: [
+      [
+        'docusaurus-plugin-dotenv',
+        {
+            path: "./.env", 
+            systemvars: true, 
+        }
+      ]
+    ]
 };
