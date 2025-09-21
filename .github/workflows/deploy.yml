@@ -38,6 +38,23 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm ci
+      - name: Load environment variables
+        env:
+          FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+          FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+          FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
+          FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
+          FIREBASE_MESSAGING_ID: ${{ secrets.FIREBASE_MESSAGING_ID }}
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+          FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+        run: |
+          echo "FIREBASE_API_KEY=$FIREBASE_API_KEY" >> $GITHUB_ENV
+          echo "FIREBASE_APP_ID=$FIREBASE_APP_ID" >> $GITHUB_ENV
+          echo "FIREBASE_AUTH_DOMAIN=$FIREBASE_AUTH_DOMAIN" >> $GITHUB_ENV
+          echo "FIREBASE_MEASUREMENT_ID=$FIREBASE_MEASUREMENT_ID" >> $GITHUB_ENV
+          echo "FIREBASE_MESSAGING_ID=$FIREBASE_MESSAGING_ID" >> $GITHUB_ENV
+          echo "FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID" >> $GITHUB_ENV
+          echo "FIREBASE_STORAGE_BUCKET=$FIREBASE_STORAGE_BUCKET" >> $GITHUB_ENV
       - name: Build with Docusaurus
         run: npm run build
       - name: Upload artifact

@@ -5,7 +5,7 @@ module.exports = {
   favicon: "img/favicon.ico",
 
   url: "https://braeandfriends.github.io",
-  baseUrl: "/prompt-registry",
+  baseUrl: "/",
 
   // GitHub pages deployment config
   organizationName: "Brae",
@@ -76,4 +76,13 @@ module.exports = {
         darkTheme: require("prism-react-renderer").themes.vsDark,
       },
     }),
+    plugins: [
+      [
+        'docusaurus-plugin-dotenv',
+        {
+            path: "./.env", 
+            systemvars: true, 
+        }
+      ]
+    ]
 };

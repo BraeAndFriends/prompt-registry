@@ -154,18 +154,25 @@ graph TD
 
     UI --> MEM
     MEM --> OR
-    OR --> CR
+    
     OR --> PD
     OR --> IR
+    OR --> CR
     OR --> BL
 
     CR --> VAL
+    PD -.-> IR
     PD --> VAL
-    IR --> VAL
-    BL --> SUP
+    PD -.-> CR
 
-    VAL --> ANS
+    BL -.-> IR
+    BL --> SUP
+    BL -.-> CR
+
+    IR --> VAL
+
     SUP --> ANS
+    VAL --> ANS
 
     VAL -.-> SUP
     SUP -.-> VAL
