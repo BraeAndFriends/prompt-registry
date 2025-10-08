@@ -1,0 +1,9 @@
+{
+  "position": 5,
+  "label": "Discussion Material Agent",
+  "link": {
+    "type": "generated-index",
+    "title": "Discussion Material Agent",
+    "description": "Agent responsible for generating discussion materials and pitch content"
+  }
+}
